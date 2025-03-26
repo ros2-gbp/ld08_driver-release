@@ -1,0 +1,13 @@
+Source: ros-jazzy-ld08-driver
+Section: misc
+Priority: optional
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-rclcpp, ros-jazzy-sensor-msgs, ros-jazzy-ros-workspace
+Homepage: http://wiki.ros.org/ld08_driver
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-ld08-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-rclcpp, ros-jazzy-sensor-msgs, ros-jazzy-ros-workspace
+Description: ROS package for LDS-02(LD08) Lidar.
+ The Lidar sensor sends data to the Host controller for the Simultaneous Localization And Mapping(SLAM).
