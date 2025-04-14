@@ -25,17 +25,12 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(Boost REQUIRED system)
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
-endif()
 
 ################################################################################
 # Build
 ################################################################################
 include_directories(
   include
-  ${catkin_INCLUDE_DIRS}
 )
 
 set(CMAKE_CXX_FLAGS "-std=c++17 ${CMAKE_CXX_FLAGS}")
@@ -43,7 +38,7 @@ set(CMAKE_CXX_FLAGS "-std=c++17 ${CMAKE_CXX_FLAGS}")
 file(GLOB  MAIN_SRC src/*.cpp)
 
 add_executable(ld08_driver  ${MAIN_SRC})
-target_link_libraries(ld08_driver pthread udev  ${catkin_LIBRARIES})
+target_link_libraries(ld08_driver pthread udev Boost::system)
 ament_target_dependencies(ld08_driver
   rclcpp
   std_msgs
