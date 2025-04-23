@@ -1,0 +1,39 @@
+ros-kilted-ld08-driver (1.1.3-2noble) noble; urgency=high
+
+  * Support flexible configuration of the frame_id used when publishing the scan topic
+  * Reduce CPU usage of the ld08 LiDAR node by adding sleep to its main loop, related PR(https://github.com/ROBOTIS-GIT/ld08_driver/pull/23)
+  * Contributors: Hyungyu Kim, Xander Soldaat
+
+ -- Pyo <pyo@robotis.com>  Fri, 11 Apr 2025 05:00:00 -0000
+
+ros-kilted-ld08-driver (1.1.2-2noble) noble; urgency=high
+
+  * Removed the unused parameter from the constructor of the SlTransform class
+  * Contributors: Hyungyu Kim
+
+ -- Pyo <pyo@robotis.com>  Wed, 02 Apr 2025 05:00:00 -0000
+
+ros-kilted-ld08-driver (1.1.1-2noble) noble; urgency=high
+
+  * Added the boost and libudev-dev dependency for release
+  * Modified the CI and lint
+  * Contributors: Pyo, Hyungyu Kim
+
+ -- Pyo <pyo@robotis.com>  Thu, 27 Mar 2025 05:00:00 -0000
+
+ros-kilted-ld08-driver (1.1.0-2noble) noble; urgency=high
+
+  * ROS 2 Humble Hawksbill supported
+  * Added Lint and CI
+  * Contributors: Hye-Jong Kim, Hyungyu Kim
+
+ -- Pyo <pyo@robotis.com>  Tue, 25 Feb 2025 06:00:00 -0000
+
+ros-kilted-ld08-driver (1.0.0-2noble) noble; urgency=high
+
+  * First release
+  * Contributors: Will Son
+
+ -- Pyo <pyo@robotis.com>  Fri, 04 Feb 2022 06:00:00 -0000
+
+
