@@ -104,4 +104,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/ROBOTIS-GIT/ld08_driver.git
-    version: :{auto}
+    version: 1.1.4
+    version_saved: :{auto}
